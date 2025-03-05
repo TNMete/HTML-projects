@@ -7,7 +7,8 @@
     <title>Mete Karaoglan
     </title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="./signup.js"></script>
+    <script src="navbar.js"></script>
 </head>
 <nav>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -16,22 +17,29 @@
         <li><a href="achievements.html">Achievements</a></li>
         <li><a href="qualification.html">Qualifications</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>
     </ul>
     <div class="topic">
     </div>
-    <script>
-        function toggleMenu() {
-            document.getElementById("nav-list").classList.toggle("show");
-        }
-    </script>
+
 </nav>
 
 <body>
+    <div class="topic">
+        <input id="emailaddress" placeholder="enter your email" />
+        <input id="password" placeholder="enter your password" />
+        <input id="password2" placeholder="repeat your password" />
+        <input id="firstname" placeholder="enter your first name" />
+        <input id="surname" placeholder="enter your surname" />
+        <button onclick="signup()">Signup</button>
+    </div>
 </body>
 
 <footer>
-    <div class="footer">© 2025 Techstarter</text>
+    <div class="footer"><text>© 2025 Techstarter</text>
     </div>
 </footer>
+
 
 </html>
