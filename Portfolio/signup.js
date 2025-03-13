@@ -5,9 +5,12 @@ function signup() {
   const firstname = document.getElementById("firstname").value;
   const surname = document.getElementById("surname").value;
   if (email.length >= 3) {
-    // frag Tom
-    if (email.length > 1 && password.length > 1 && password2.length > 1 && firstname.length > 1 && surname.length > 1) {
-      alert("true")
+    if (email && password && password2 && firstname && surname) {
+      if (password === password2) {
+        alert("Your passwords don't match")
+      } else {
+        alert("true")
+      }
     } else {
       alert("false")
     }
