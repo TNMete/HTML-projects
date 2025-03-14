@@ -101,18 +101,14 @@ nav {
     }
 }
 
-html,
+
 body {
     height: 100%;
     margin: 0;
     font-family: 'Arial', sans-serif;
-}
-
-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .container {
@@ -125,12 +121,23 @@ body {
     margin: auto;
 }
 
+.S1_text {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 200px;
+}
+
+.photoWrapper {
+    padding-top: 200px;
+}
+
 .S1 {
     width: 300px;
     height: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 4);
     margin-right: 50px;
+
 }
 
 .footer {
@@ -139,4 +146,6 @@ body {
     color: white;
     text-align: center;
     padding: 15px 0;
+    position: fixed;
+    bottom: 0;
 }
